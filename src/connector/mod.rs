@@ -15,7 +15,7 @@ pub use support_protocols::SupportProtocols;
 use crate::Node;
 use ckb_stop_handler::{SignalSender, StopHandler};
 use futures::prelude::*;
-use p2p::{
+use tentacle::{
     builder::ServiceBuilder, bytes::Bytes, context::SessionContext, multiaddr::Multiaddr,
     secio::SecioKeyPair, service::ProtocolMeta as P2PProtocolMeta, service::Service as P2PService,
     service::ServiceControl as P2PServiceControl, service::TargetProtocol as P2PTargetProtocol,

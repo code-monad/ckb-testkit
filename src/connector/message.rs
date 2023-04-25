@@ -4,7 +4,7 @@ use ckb_types::{
     packed,
     prelude::*,
 };
-use p2p::multiaddr::Multiaddr;
+use tentacle::multiaddr::Multiaddr;
 
 pub fn build_identify_message(
     network_identifier: &str,

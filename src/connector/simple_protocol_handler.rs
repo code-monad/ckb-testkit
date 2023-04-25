@@ -1,7 +1,7 @@
 use super::compress::{compress, decompress};
 use super::SharedState;
 use super::SupportProtocols;
-use p2p::{
+use tentacle::{
     builder::MetaBuilder as P2PMetaBuilder,
     bytes,
     context::{ProtocolContext, ProtocolContextMutRef},

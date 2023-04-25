@@ -1,5 +1,5 @@
 use crossbeam::channel::{unbounded, Receiver, Sender};
-use p2p::{bytes::Bytes, context::SessionContext, multiaddr::Multiaddr, ProtocolId, SessionId};
+use tentacle::{bytes::Bytes, context::SessionContext, multiaddr::Multiaddr, ProtocolId, SessionId};
 use std::collections::HashMap;
 
 /// Shared state between protocol handlers and service handler. As it is used across multiple

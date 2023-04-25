@@ -12,7 +12,7 @@ use ckb_types::{
     packed,
     prelude::*,
 };
-use p2p::multiaddr::Multiaddr;
+use tentacle::multiaddr::Multiaddr;
 /// Util functions attached to `Connector`.
 use std::time::Duration;
 

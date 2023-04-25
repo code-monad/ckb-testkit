@@ -1,4 +1,4 @@
-use p2p::{
+use tentacle::{
     builder::MetaBuilder,
     service::{BlockingFlag, ProtocolHandle, ProtocolMeta},
     traits::ServiceProtocol,

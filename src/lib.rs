@@ -17,7 +17,7 @@ pub use user::User;
 pub use ckb_crypto;
 pub use ckb_jsonrpc_types;
 pub use ckb_types;
-pub use p2p;
+pub use tentacle;
 
 use ckb_types::{h256, H256};
 

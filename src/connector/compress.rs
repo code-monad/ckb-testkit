@@ -1,5 +1,5 @@
 use crate::debug;
-use p2p::bytes::{BufMut, Bytes, BytesMut};
+use tentacle::bytes::{BufMut, Bytes, BytesMut};
 use snap::raw::{decompress_len, Decoder as SnapDecoder, Encoder as SnapEncoder};
 
 use std::io;

@@ -1,5 +1,5 @@
 use super::SharedState;
-use p2p::{
+use tentacle::{
     context::ServiceContext as P2PServiceContext, service::ServiceError as P2PServiceError,
     service::ServiceEvent as P2PServiceEvent, traits::ServiceHandle as P2PServiceHandle,
 };
