@@ -1,0 +1,43 @@
+[package]
+name = "ckb-testkit"
+version = "0.0.1"
+authors = ["keroro <keroroxx520@gmail.com>"]
+edition = "2018"
+license = "MIT"
+homepage = "https://github.com/nervosnetwork/ckb-testkit"
+repository = "https://github.com/nervosnetwork/ckb-testkit"
+description = "ckb testkit"
+
+[dependencies]
+#ckb2019-jsonrpc-types = { package = "ckb-jsonrpc-types", version = "0.43.2" }
+ckb-jsonrpc-types = "0.109.0"
+ckb-types = "0.109.0"
+ckb-error = "0.109.0"
+ckb-crypto = "0.109.0"
+ckb-hash = "0.109.0"
+ckb-stop-handler = "0.109.0"
+ckb-indexer = "0.109.0"
+reqwest = { version = "0.10.9", features = ["blocking", "json"] }
+serde_json = "1.0"
+lazy_static = "1.4.0"
+fs_extra = "1.2.0"
+jsonrpc-core = "18.0.0"
+log = "0.4"
+tempfile = "3.0"
+version-compare = "0.1.1"
+tokio = { version = "1", features = ["full"] }
+tokio-util = { version = "0.6", features = ["codec"] }
+serde = { version = "1.0", features = ["derive"], optional = true }
+serde_derive = { version = "1.0", optional = true }
+bytes = { version = "1", optional = true }
+p2p = { version="0.4.0-alpha.2", package="tentacle", features = ["upnp", "parking_lot"] }
+futures = { version = "0.3" }
+crossbeam = "0.8.1"
+snap = "1"
+tentacle-multiaddr = "0.3.0"
+tentacle-secio = "0.5.0"
+tokio-yamux = "0.3.2"
+
+[features]
+default = []
+with_subscribe = ["serde", "serde_derive", "bytes"]
